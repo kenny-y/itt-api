@@ -1,3 +1,6 @@
+#node-gyp
+build
+
 # Logs
 logs
 *.log

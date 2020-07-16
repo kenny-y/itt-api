@@ -1,0 +1,27 @@
+{
+  "name": "itt-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenny-y/itt-api.git"
+  },
+  "keywords": [
+    "vtune",
+    "itt"
+  ],
+  "author": "kaining.yuan@intel.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenny-y/itt-api/issues"
+  },
+  "homepage": "https://github.com/kenny-y/itt-api#readme",
+  "dependencies": {
+    "node-gyp": "^7.0.0"
+  }
+}
