@@ -31,7 +31,7 @@ static std::string get_utf8_string(napi_env env, napi_value js_str) {
 }
 
 bool fetch_args(napi_env env, napi_callback_info info, napi_value* argv, size_t args_count) {
-    size_t          argc = 1;
+    size_t          argc = args_count;
     napi_status     status;
 
     status = napi_get_cb_info(env, info, &argc, argv, NULL, NULL);
@@ -45,7 +45,7 @@ bool fetch_args(napi_env env, napi_callback_info info, napi_value* argv, size_t 
         msg += " ";
         msg += args_count;
         msg += " ";
-        msg += "argument";
+        msg += "argument(s)";
         napi_throw_error(env, "EINVAL", msg.c_str());
         return false;
     }
